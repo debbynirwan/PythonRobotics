@@ -171,7 +171,7 @@ def plot_arrow(x, y, yaw, length=0.5, width=0.1):
 def main():
     print(__file__ + " start!!")
     # initial state [x(m), y(m), yaw(rad), v(m/s), omega(rad/s)]
-    x = np.array([0.0, 0.0, math.pi / 8.0, 0.0, 0.0])
+    x = np.array([0.0, 0.0, math.radians(22.0), 0.0, 0.0])
     # goal position [x(m), y(m)]
     goal = np.array([10, 10])
     # obstacles [x(m) y(m), ....]
